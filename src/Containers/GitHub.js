@@ -20,7 +20,7 @@ export default class GitHub extends Component {
 
     const searchUser = async () => {
       console.log(username)
-      await axios.get(`https://api.github.com/users/mateusfmachado`)
+      await axios.get(`https://api.github.com/users/${username}`)
         .then(res => {
           const response = res.data;
           this.setState({ user: response });
