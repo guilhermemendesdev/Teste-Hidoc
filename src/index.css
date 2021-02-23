@@ -1,3 +1,19 @@
+:root {
+  --cor-tema: #006499;
+  --cor-tema-claro: #1d8dc9;
+  --cor-primaria: rgb(10,99,167);
+  --cor-secundaria: rgb(17,131,17);
+  --cor-terciaria: rgb(176,22,22);
+  --cor-amarelo: rgb(220,204,26);
+
+  --cor-preta: #000;
+  --cor-branca: #FFF;
+  --cor-cinza-claro: #EEE;
+  --cor-cinza-escuro: #222;
+  --cor-cinza-medio: rgba(68, 68, 68, 0.747);
+  
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +21,77 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--cor-branca);
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.full-width{width: 100%;}
+.full-height{height: 100vh;}
+
+/* FLEX */
+.flex{  display: flex;}
+.horizontal{flex-direction: row;}
+.vertical{flex-direction: column;}
+.space-between{justify-content: space-between;}
+
+.flex-1{flex: 1;}
+.flex-2{flex: 2;}
+.flex-3{flex: 3;}
+.flex-4{flex: 4;}
+.flex-5{flex: 5;}
+.flex-6{flex: 6;}
+.flex-7{flex: 7;}
+.flex-8{flex: 8;}
+
+.flex-start{
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-end{
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.GitHub-Repos{
+  width: 80%;
+  margin: 30px auto;
+}
+.GitHub-Repos input{
+  width: 40%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.GitHub-Repos button{
+  width: 40%;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: green;
+  color: white;
+}
+.Img-User img{
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.Img-User p {
+  align-self: center;
+  margin-left: 30px;
+  font-size: 1.5rem;
+}
+.Repos{
+  margin-left: 20px;
+}
+.Repos p{
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.Repos .Star-Repos{
+align-self: center;
+margin-left: 20px;
+border: 1px solid black;
+padding: 2px;
 }
