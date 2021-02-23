@@ -56,6 +56,15 @@ body {
   align-items: center;
 }
 
+.Botoes{
+width: 100% !important;
+justify-content: space-between;
+}
+
+.Botoes button{
+width: 100% !important;
+margin: 10px;
+}
 .GitHub-Repos{
   width: 80%;
   margin: 30px auto;
@@ -94,4 +103,36 @@ align-self: center;
 margin-left: 20px;
 border: 1px solid black;
 padding: 2px;
+}
+
+.Seguidores img{
+  width: 10%;
+  margin: 20px;
+border-radius: 50%;
+}
+.Seguidores a{
+align-self: center;
+text-decoration: none;
+color: black;
+}
+
+@media screen and (max-width: 720px){
+  .GitHub-Repos{
+    width: 90%;
+  }
+  .Img-User p{
+font-size: 1rem;
+  }
+  .form-input input{
+    width: 100%;
+  }
+  .button button {
+    width: 100%;
+  }
+  .GitHub-Repos button {
+    height: 40px;
+  }
+  .Repos p{
+    font-size: 0.85rem;
+  }
 }
