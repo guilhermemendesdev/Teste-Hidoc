@@ -49,7 +49,9 @@ export default class GitHub extends Component {
           const response = res.data;
           this.setState({
             repos: response,
-            reposContainer: true
+            reposContainer: true,
+            seguidoresContainer: false,
+            seguindoContainer: false,
           });
         })
     }
